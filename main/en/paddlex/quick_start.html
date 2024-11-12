@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../static/images/logo.jpg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -252,6 +252,30 @@ You're not viewing the latest version.
           <li class="md-select__item">
             <a href="quick_start.html" hreflang="en" class="md-select__link">
               English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ja/paddlex/quick_start.html" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ru/paddlex/quick_start.html" hreflang="ru" class="md-select__link">
+              Pу́сский язы́к
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../hi/paddlex/quick_start.html" hreflang="hi" class="md-select__link">
+              हिन्दी
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/paddlex/quick_start.html" hreflang="ko" class="md-select__link">
+              한국인
             </a>
           </li>
         
@@ -1227,6 +1251,8 @@ You're not viewing the latest version.
       
         
       
+        
+      
     
     
       
@@ -1377,6 +1403,27 @@ You're not viewing the latest version.
   
   <span class="md-ellipsis">
     Fine-tune
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ppocr/model_train/tricks.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Training Tricks
   </span>
   
 
@@ -1569,7 +1616,7 @@ You're not viewing the latest version.
               
   
   <span class="md-ellipsis">
-    Deploy
+    Model Deploy
   </span>
   
 
@@ -1585,7 +1632,7 @@ You're not viewing the latest version.
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_9">
             <span class="md-nav__icon md-icon"></span>
-            Deploy
+            Model Deploy
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2485,7 +2532,7 @@ You're not viewing the latest version.
               
   
   <span class="md-ellipsis">
-    Deploy
+    Model Deploy
   </span>
   
 
@@ -2501,7 +2548,7 @@ You're not viewing the latest version.
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7_5">
             <span class="md-nav__icon md-icon"></span>
-            Deploy
+            Model Deploy
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -5036,8 +5083,11 @@ You're not viewing the latest version.
 </blockquote>
 <h3 id="installation">🛠️ Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
 <blockquote>
-<p>❗Before installing PaddleX, please ensure you have a basic <strong>Python environment</strong> (Note: Currently supports Python 3.8 to Python 3.10, with more Python versions being adapted).
-* <strong>Installing PaddlePaddle</strong>
+<p>❗Before installing PaddleX, please ensure you have a basic <strong>Python environment</strong> (Note: Currently supports Python 3.8 to Python 3.10, with more Python versions being adapted).</p>
+</blockquote>
+<ul>
+<li><strong>Installing PaddlePaddle</strong></li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># cpu</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">paddlepaddle</span><span class="o">==</span><span class="m">3</span>.0.0b1<span class="w"> </span>-i<span class="w"> </span>https://www.paddlepaddle.org.cn/packages/stable/cpu/
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
@@ -5047,7 +5097,8 @@ You're not viewing the latest version.
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># gpu，该命令仅适用于 CUDA 版本为 12.3 的机器环境</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>paddlepaddle-gpu<span class="o">==</span><span class="m">3</span>.0.0b1<span class="w"> </span>-i<span class="w"> </span>https://www.paddlepaddle.org.cn/packages/stable/cu123/
 </span></code></pre></div>
-❗For more PaddlePaddle versions, please refer to the <a href="https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation./docs/zh/install/pip/linux-pip.html">PaddlePaddle official website</a>. 
+<blockquote>
+<p>❗For more PaddlePaddle versions, please refer to the <a href="https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation./docs/zh/install/pip/linux-pip.html">PaddlePaddle official website</a>. 
 * <strong>Installing PaddleX</strong></p>
 </blockquote>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>https://paddle-model-ecology.bj.bcebos.com/paddlex/whl/paddlex-3.0.0b1-py3-none-any.whl
@@ -5086,10 +5137,10 @@ The following steps are executed:</p>
 <tr>
 <td>PP-ChatOCRv3-doc</td>
 <td><code>PP-ChatOCRv3-doc</code></td>
-<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/release/3.0-beta1/docs/pipeline_usage/tutorials/information_extration_pipelines/document_scene_information_extraction_en.md#22-local-experience">Python Script Usage for PP-ChatOCRv3-doc Pipeline</a></td>
+<td><a href="https://github.com/PaddlePaddle/PaddleX/blob/release/3.0-beta1/docs/pipeline_usage/tutorials/information_extraction_pipelines/document_scene_information_extraction_en.md">Python Script Usage for PP-ChatOCRv3-doc Pipeline</a></td>
 </tr>
 <tr>
-<td>General OCR</td>
+<td>OCR</td>
 <td><code>OCR</code></td>
 <td><a href="https://github.com/PaddlePaddle/PaddleX/blob/release/3.0-beta1/docs/pipeline_usage/tutorials/ocr_pipelines/OCR_en.md#22-local-experience">Python Script Usage for General OCR Pipeline</a></td>
 </tr>
@@ -5182,7 +5233,7 @@ The following steps are executed:</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 12, 2024</span>
   </span>
 
     
@@ -5192,7 +5243,7 @@ The following steps are executed:</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 12, 2024</span>
   </span>
 
     
